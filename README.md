@@ -19,3 +19,7 @@ python hybrid_lstm_traffic.py
    - Configura `HTTP_PROXY`/`HTTPS_PROXY` o usa un mirror interno antes de correr `pip install`.
 
 El script ahora valida dependencias faltantes y muestra un mensaje claro en lugar de un traceback críptico.
+
+## Dataset de ejemplo
+
+Se incluye un `traffic_data.csv` de ejemplo en la raíz del proyecto para pruebas rápidas del flujo.
