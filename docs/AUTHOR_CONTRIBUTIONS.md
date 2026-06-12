@@ -5,24 +5,24 @@ This repository was developed as an academic and didactic research artifact for 
 ## Authors
 
 * Jefferson Cabrera-Amaiquema
-    Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad Privada Domingo Savio
-    ORCID: https://orcid.org/0000-0003-4623-4462
-    Contribution: proposal design.
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad Privada Domingo Savio
+  ORCID: https://orcid.org/0000-0003-4623-4462
+  Contribution: proposal design.
 
 * Renata Cervantes-Avilés
-    Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad Bolivariana del Ecuador
-    ORCID: https://orcid.org/0009-0001-9898-7477
-    Contribution: field data collection and translation.
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad Bolivariana del Ecuador
+  ORCID: https://orcid.org/0009-0001-9898-7477
+  Contribution: field data collection and translation.
 
 * Darwin Manzano-Cuenca
-    Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de la Habana
-    ORCID: https://orcid.org/0000-0001-9770-1441
-    Contribution: expert validation.
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de la Habana
+  ORCID: https://orcid.org/0000-0001-9770-1441
+  Contribution: expert validation.
 
 * Evelyn Lopez-Segura
-    Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de Guayaquil
-    ORCID: https://orcid.org/0009-0003-5451-7937
-    Contribution: systematic literature review.
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de Guayaquil
+  ORCID: https://orcid.org/0009-0003-5451-7937
+  Contribution: systematic literature review.
 
 ## Contribution statement
 
