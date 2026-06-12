@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, please cite it as below."
+title: "Modelo híbrido LSTM para predicción de congestión urbana con dataset sintético Boyacá–Guayaquil"
+version: "1.0.0"
+type: software
+authors:
+  - family-names: "Cabrera-Amaiquema"
+    given-names: "Jefferson"
+    affiliation: "Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad Privada Domingo Savio"
+    orcid: "https://orcid.org/0000-0003-4623-4462"
+  - family-names: "Cervantes-Avilés"
+    given-names: "Renata"
+    affiliation: "Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad Bolivariana del Ecuador"
+    orcid: "https://orcid.org/0009-0001-9898-7477"
+  - family-names: "Manzano-Cuenca"
+    given-names: "Darwin"
+    affiliation: "Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de la Habana"
+    orcid: "https://orcid.org/0000-0001-9770-1441"
+  - family-names: "Lopez-Segura"
+    given-names: "Evelyn"
+    affiliation: "Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de Guayaquil"
+    orcid: "https://orcid.org/0009-0003-5451-7937"
+repository-code: "https://github.com/TheCat0/Modelo-h-brido-LSTM-para-predicci-n-de-congesti-n-urbana"
+abstract: "Repositorio académico y didáctico que integra un pipeline híbrido LSTM para predicción de congestión urbana, un dataset sintético de observaciones de tráfico en Calle Boyacá, Guayaquil, documentación metodológica, validación temporal, persistencia de preprocesadores y workflow reproducible de GitHub Actions con Python 3.12."
+keywords:
+  - LSTM
+  - traffic congestion
+  - urban mobility
+  - Guayaquil
+  - Boyacá
+  - synthetic dataset
+  - time series
+  - machine learning
+  - smart cities
+  - reproducible research
+  - urban traffic prediction
+  - GitHub Actions
