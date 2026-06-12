@@ -1,0 +1,100 @@
+name: Entrenar modelo LSTM de tráfico
+
+on:
+  workflow_dispatch:
+    inputs:
+      dataset:
+        description: Dataset que se entrenará
+        required: true
+        default: both
+        type: choice
+        options:
+          - both
+          - default
+          - boyaca
+
+permissions:
+  contents: read
+
+concurrency:
+  group: train-traffic-model-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.datasets.outputs.matrix }}
+    steps:
+      - id: datasets
+        name: Seleccionar datasets
+        shell: bash
+        env:
+          DATASET_SELECTION: ${{ inputs.dataset }}
+        run: |
+          case "$DATASET_SELECTION" in
+            default)
+              matrix='{"include":[{"name":"default","args":""}]}'
+              ;;
+            boyaca)
+              matrix='{"include":[{"name":"boyaca","args":"--csv data/traffic_observations_boyaca_guayaquil_2026.csv"}]}'
+              ;;
+            both)
+              matrix='{"include":[{"name":"default","args":""},{"name":"boyaca","args":"--csv data/traffic_observations_boyaca_guayaquil_2026.csv"}]}'
+              ;;
+            *)
+              echo "Selección no válida: $DATASET_SELECTION" >&2
+              exit 1
+              ;;
+          esac
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+
+  train:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Verificar imports
+        run: |
+          python -c "import joblib, numpy, pandas, sklearn, tensorflow; print('TensorFlow:', tensorflow.__version__)"
+
+      - name: Preparar dataset predeterminado con suficientes observaciones
+        if: matrix.name == 'default'
+        run: python generate_traffic_data.py
+
+      - name: Entrenar modelo (${{ matrix.name }})
+        env:
+          TF_CPP_MIN_LOG_LEVEL: "2"
+        run: |
+          set -o pipefail
+          python hybrid_lstm_traffic.py ${{ matrix.args }} \
+            --artifacts-dir "artifacts-${{ matrix.name }}" \
+            2>&1 | tee "training-${{ matrix.name }}.log"
+
+      - name: Publicar modelo, preprocesadores, metadatos y registro
+        uses: actions/upload-artifact@v4
+        with:
+          name: hybrid-lstm-traffic-${{ matrix.name }}
+          path: |
+            artifacts-${{ matrix.name }}/
+            training-${{ matrix.name }}.log
+          if-no-files-found: error
+          retention-days: 14
