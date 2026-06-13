@@ -15,18 +15,18 @@ This repository was developed as an academic and didactic research artifact for 
   Contribution: field data collection and translation.
 
 * Darwin Manzano-Cuenca
-  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de la Habana
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de La Habana
   ORCID: https://orcid.org/0000-0001-9770-1441
   Contribution: expert validation.
 
-* Evelyn Lopez-Segura
+* Evelyn López-Segura
   Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de Guayaquil
   ORCID: https://orcid.org/0009-0003-5451-7937
   Contribution: systematic literature review.
 
 ## Contribution statement
 
-Jefferson Cabrera-Amaiquema designed the research and technical proposal. Renata Cervantes-Avilés contributed to the field data collection criteria and translation. Darwin Manzano-Cuenca contributed expert validation of the methodological and applied scope. Evelyn Lopez-Segura contributed to the systematic literature review supporting the conceptual and methodological framing of the repository.
+Jefferson Cabrera-Amaiquema designed the research and technical proposal. Renata Cervantes-Avilés contributed to the field data collection criteria and translation. Darwin Manzano-Cuenca contributed expert validation of the methodological and applied scope. Evelyn López-Segura contributed to the systematic literature review supporting the conceptual and methodological framing of the repository.
 
 ## Dataset note
 

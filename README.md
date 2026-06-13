@@ -54,3 +54,42 @@ python hybrid_lstm_traffic.py --csv data/traffic_observations_boyaca_guayaquil_2
 ```
 
 Consulta la [descripción del dataset](docs/DATASET_DESCRIPTION_BOYACA.md), el [protocolo observacional proyectado](docs/FIELD_OBSERVATION_PROTOCOL_BOYACA.md) y la [nota experimental](docs/EXPERIMENTAL_NOTE_BOYACA.md) antes de interpretar resultados.
+
+## Reproducible educational notebook
+
+The reproducible Google Colab notebook provides an educational workflow to:
+
+- load the synthetic Boyacá–Guayaquil dataset;
+- audit the execution environment;
+- perform exploratory data analysis;
+- diagnose class imbalance;
+- construct chronological temporal sequences;
+- train the hybrid LSTM model;
+- evaluate class-sensitive metrics;
+- compare the hybrid model with baseline models;
+- run five-class and three-class congestion scenarios; and
+- export models, preprocessors, metrics, histories, confusion matrices, metadata, and a traceable artifact package.
+
+No precomputed metrics, confusion matrices, or trained models are included. These files are generated only after executing the notebook successfully in Google Colab.
+
+- [Reproducible Colab notebook](notebooks/colab_hybrid_lstm_boyaca_guayaquil_reproducible.ipynb)
+- [Reproducibility guide](docs/reproducibility.md)
+- [Release notes for v1.1.0](docs/release_notes_v1.1.0.md)
+
+## Authors
+
+- Jefferson Cabrera-Amaiquema<br>
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad Privada Domingo Savio<br>
+  ORCID: https://orcid.org/0000-0003-4623-4462
+
+- Renata Cervantes-Avilés<br>
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad Bolivariana del Ecuador<br>
+  ORCID: https://orcid.org/0009-0001-9898-7477
+
+- Darwin Manzano-Cuenca<br>
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de La Habana<br>
+  ORCID: https://orcid.org/0000-0001-9770-1441
+
+- Evelyn López-Segura<br>
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de Guayaquil<br>
+  ORCID: https://orcid.org/0009-0003-5451-7937

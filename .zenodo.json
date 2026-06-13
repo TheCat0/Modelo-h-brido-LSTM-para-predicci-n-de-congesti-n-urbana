@@ -1,5 +1,5 @@
 {
-  "title": "Modelo híbrido LSTM para predicción de congestión urbana con dataset sintético Boyacá–Guayaquil",
+  "title": "Modelo híbrido LSTM para predicción de congestión urbana con dataset sintético Boyacá–Guayaquil: notebook reproducible y artefactos de entrenamiento",
   "upload_type": "software",
   "description": "Repositorio académico y didáctico que integra un pipeline híbrido LSTM para predicción de congestión urbana, un dataset sintético de observaciones de tráfico en Calle Boyacá, Guayaquil, documentación metodológica, validación temporal, persistencia de preprocesadores y workflow reproducible de GitHub Actions con Python 3.12. El recurso fue desarrollado como artefacto abierto para investigación reproducible, formación técnica y experimentación metodológica en movilidad urbana inteligente.",
   "creators": [
@@ -15,11 +15,11 @@
     },
     {
       "name": "Manzano-Cuenca, Darwin",
-      "affiliation": "Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de la Habana",
+      "affiliation": "Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de La Habana",
       "orcid": "0000-0001-9770-1441"
     },
     {
-      "name": "Lopez-Segura, Evelyn",
+      "name": "López-Segura, Evelyn",
       "affiliation": "Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de Guayaquil",
       "orcid": "0009-0003-5451-7937"
     }
@@ -36,9 +36,16 @@
     "smart cities",
     "reproducible research",
     "urban traffic prediction",
-    "GitHub Actions"
+    "GitHub Actions",
+    "Google Colab",
+    "reproducibility",
+    "educational resource",
+    "class imbalance",
+    "baseline comparison",
+    "trained artifacts",
+    "intelligent transportation systems"
   ],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "language": "spa",
-  "notes": "El dataset Boyacá–Guayaquil incluido en este repositorio es sintético, didáctico y no oficial. No debe interpretarse como una medición municipal oficial ni como registro emitido por una autoridad pública de tránsito."
+  "notes": "Version 1.1.0 extends the initial release by incorporating a reproducible Google Colab notebook, class-sensitive evaluation workflow, baseline comparison, five-class and three-class scenarios, and exported training artifacts. The Boyacá–Guayaquil dataset remains synthetic, didactic, and non-official; it must not be interpreted as an official municipal traffic measurement or as an operational traffic-management system."
 }
