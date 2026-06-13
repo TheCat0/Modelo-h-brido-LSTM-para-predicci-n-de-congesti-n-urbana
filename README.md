@@ -75,3 +75,21 @@ No precomputed metrics, confusion matrices, or trained models are included. Thes
 - [Reproducible Colab notebook](notebooks/colab_hybrid_lstm_boyaca_guayaquil_reproducible.ipynb)
 - [Reproducibility guide](docs/reproducibility.md)
 - [Release notes for v1.1.0](docs/release_notes_v1.1.0.md)
+
+## Authors
+
+- Jefferson Cabrera-Amaiquema<br>
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad Privada Domingo Savio<br>
+  ORCID: https://orcid.org/0000-0003-4623-4462
+
+- Renata Cervantes-Avilés<br>
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad Bolivariana del Ecuador<br>
+  ORCID: https://orcid.org/0009-0001-9898-7477
+
+- Darwin Manzano-Cuenca<br>
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de La Habana<br>
+  ORCID: https://orcid.org/0000-0001-9770-1441
+
+- Evelyn López-Segura<br>
+  Instituto Superior Tecnológico Bolivariano de Tecnología / Universidad de Guayaquil<br>
+  ORCID: https://orcid.org/0009-0003-5451-7937
