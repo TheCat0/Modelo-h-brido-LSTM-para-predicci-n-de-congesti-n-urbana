@@ -17,7 +17,9 @@ This repository is an open educational computational resource for training, eval
 4. Run all cells in order.
 5. Download the generated artifact package.
 
-The notebook clones or opens the repository, audits the runtime, validates the dataset, performs exploratory analysis, applies chronological splitting, trains baseline and hybrid LSTM models, evaluates five-class and three-class scenarios, and exports the generated files. Output files are produced only after the notebook has been executed; no precomputed metrics are stored in this repository.
+The notebook performs a clean clone of the repository, checks out the published `v1.1.0` tag, verifies the dependency manifest and dataset, audits the runtime, performs exploratory analysis, applies chronological splitting, trains baseline and hybrid LSTM models, evaluates five-class and three-class scenarios, and exports the generated files.
+
+The real metrics, confusion matrices, fitted preprocessors, trained models, and ZIP package are generated only after the notebook has completed successfully in Google Colab. They are not precomputed or committed to the repository. Before the `v1.1.0` tag is published, maintainers may temporarily test the notebook against `main`; the released notebook must remain fixed to `v1.1.0`.
 
 ## Expected outputs
 
